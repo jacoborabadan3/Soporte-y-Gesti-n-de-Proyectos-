@@ -1,0 +1,12 @@
+@import "./globalStyles";
+@import "./responsiveDesign";
+/* Index Styles */
+@import "./indexStyles/header";
+@import "./indexStyles/sobreNosotros";
+@import "./indexStyles/serviciosMain";
+@import "./indexStyles/clientesIndex";
+@import "./indexStyles/footer";
+/* Pages Styles */
+@import "./sassPages/servicios";
+@import "./sassPages/insumosPages";
+@import "./sassPages/contactoPages";

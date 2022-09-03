@@ -1,0 +1,47 @@
+/* mobile version */
+.sobreNosotros {
+    overflow: hidden;
+    .sobreNosotrosTexto {
+        p {
+            &:nth-child(1) {
+                @include media-up(lg) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sobreNosotrosValores {
+        .valores {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            @include media-up(lg) {
+                padding: 2rem;
+            }
+            .valoresItem {
+                h3 {
+                    margin: 2rem auto;
+                }
+                p {
+                    text-align: justify;
+                }
+            }
+            @include media-up(lg) {
+                flex-direction: row;
+                gap: 4rem;
+                .valoresItem {
+                    box-shadow: 0px 0px .8rem #333;
+                    padding: 2rem;
+                    border-radius: .5rem;
+                    &:nth-child(1) {
+                        flex-basis: calc(50%);
+                    }
+                    &:nth-child(2), 
+                    &:nth-child(3) {
+                        flex-basis: calc(25%);
+                    }
+                }
+            }
+        }
+    }
+}

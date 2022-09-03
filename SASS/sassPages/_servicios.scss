@@ -1,0 +1,48 @@
+/* Mobile */
+
+/* Desktop */
+.siteHeaderPages {
+    background-color: #dee2e6;
+    padding: 2rem;
+    .logoBarraHeaderPages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media-up(xs) {
+            display: none;
+        }
+        @include media-up(lg) {
+            display: flex;
+        }
+        .logoBarraHeaderPages__logoTexto {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            img {
+                width: 8rem;
+            }
+            p {
+                font-size: 2.5rem;
+            }
+        }
+
+    }.logoBarraHeaderPages__navegacion {
+        .barraUlPages {
+            display: flex;
+            list-style: none;
+            gap: 4rem;
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 2.2rem;
+                    color: #212529;
+                    display: block;
+                    transition: transform 600ms;
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+}

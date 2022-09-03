@@ -1,0 +1,45 @@
+/* Mobile */
+.clientesMobile {
+    @include media-up(lg) {
+        display: none;
+    }
+}
+
+/* Desktop */
+.clientesDesktop {
+    overflow: hidden;
+    @include media-up(xs) {
+        display: none;
+    }
+    @include media-up(lg) {
+        display: block;
+        .slide1 {
+            animation-name: slide1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            @keyframes slide1 {
+                0% {
+                    transform: translateX(-1200px);
+                }
+                100% {
+                    transform: translateX(1200px);
+                }
+            }
+        }
+        .slide2 {
+            animation-name: slide2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            @keyframes slide2 {
+                0% {
+                    transform: translateX(1200px);
+                }
+                100% {
+                    transform: translateX(-1200px);
+                }
+            }
+        }
+    }
+}

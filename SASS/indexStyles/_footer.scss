@@ -1,0 +1,43 @@
+.contenidoFooter {
+    color: #fff;
+    padding: 1rem;
+    @include media-up(lg) {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        p {
+            font-size: 2rem;
+        }
+        .contenidoFooterItem {
+            flex-basis: calc(33.3%);
+        }
+    }
+    .logoUbicacion {
+        .logoUbicacion__logo, 
+        .logoUbicacion__ubicacion {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        .logoUbicacion__logo {
+            margin-bottom: 2rem;
+            img {
+                width: 6rem;
+            }
+        }
+    }
+    .contactoFooter {
+        .contactoFooter__telefono {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+    }
+    .sitioResponsivo {
+        p {
+            text-align: justify;
+            font-size: 1.8rem;
+        }
+    }
+}

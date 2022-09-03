@@ -1,0 +1,39 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    body {
+        font-size: 1.6rem;
+        font-family: 'Lato', sans-serif!important;
+    }
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Estilos Globales */
+h1 {
+    font-size: 3.4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.4rem;
+}
+img {
+    max-width: 100%;
+}
+
+
+/* Utilidades */
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+.section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}

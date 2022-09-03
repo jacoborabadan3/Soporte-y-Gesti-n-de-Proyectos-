@@ -1,0 +1,12 @@
+{
+  "name": "soporte-y-gestion-de-proyectos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch SASS:CSS"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
